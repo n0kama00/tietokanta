@@ -1,16 +1,13 @@
 <?php
-    require_once('utilities.php');
+    require_once('functions.php');
     // Hakukriteerit
     $html = "<h2>Criteria</h2>";
     $html .= '<form action="GET">';
-    // Alue-pudotusvalikko
-    $html .= createRegionDropDown();
-    // Genre-pudotusvalikko
-    $html .= createGenreDropDown();
+    // pudotusvalikot
     $html .= createNameAndRoleDropDown();
     $html .= createRatingDropDown();
     // Looppaa läpi tiedostot datasets-hakemistosta
-    $path = 'datasets';
+    $path = 'data';
     if ($handle = opendir($path)) {
         while (false !== ($file = readdir($handle))) {
             if ('.' === $file) continue;
