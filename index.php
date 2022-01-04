@@ -7,6 +7,8 @@
     $html .= createRegionDropDown();
     // Genre-pudotusvalikko
     $html .= createGenreDropDown();
+    $html .= createNameAndRoleDropDown();
+    $html .= createRatingDropDown();
     // Looppaa läpi tiedostot datasets-hakemistosta
     $path = 'datasets';
     if ($handle = opendir($path)) {
