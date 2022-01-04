@@ -1,6 +1,6 @@
 <?php
     // Muodosta tietokantayhteys
-    require_once('../db.php'); // Ota db.php-tiedosto käyttöön tässä tiedostossa
+    require_once('../database.php'); // Ota db.php-tiedosto käyttöön tässä tiedostossa
     // Lue region get-parametri muuttujaan
     $rating = $_GET['rating'];
     $conn = createDbConnection(); // Kutsutaan db.php-tiedostossa olevaa createDbConnection()-funktiota, joka avaa tietokantayhteden
