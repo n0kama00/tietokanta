@@ -22,7 +22,7 @@
     // Looppaa tietokannasta saadut rivit läpi
     foreach($rows as $row) {
         // Tulosta jokaiselle riville li-elementti
-        $html .= '<li>' . $row['primary_title'] . $row[' rating']'</li>';
+        $html .= '<li>' . $row['primary_title'] . $row['average_rating'] . '</li>';
     }
     $html .= '</ul>';
     echo $html;
